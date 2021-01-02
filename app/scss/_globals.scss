@@ -1,0 +1,29 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.3;
+}
+
+//helpers
+.mg {
+  width: 80%;
+  margin: 0 auto;
+  @include breakpoint-down(other) {
+    margin: 0 auto;
+    width: 90%;
+  }
+}

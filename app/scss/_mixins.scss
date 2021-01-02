@@ -1,0 +1,36 @@
+//breakpoints
+@media (min-width: 90em) {
+}
+
+// 1440px, 375px
+$breakpoints-up: (
+  "desktop": "90em",
+  "tablet": "61.25em",
+  "mobile": "23.4375em",
+);
+
+// 1439px, 374px
+$breakpoints-down: (
+  "mobile": "23.375em",
+  "tablet": "61.24em",
+  "other": "76.125em",
+  "desktop": "89.9375em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+//convert px to rem calculation
+
+@function rem($pixels, $context: 16) {
+  @return ($pixels / $context) * 1rem;
+}
