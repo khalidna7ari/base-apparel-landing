@@ -27,20 +27,26 @@
       <div class="hero__container"></div>
       <section class="contents mg">
         <h1><span>We're</span> coming soon</h1>
-        <p>
+        <p class="contents__message">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <form>
+        <form class="border--toggle">
           <div class="input__container">
-            <input type="email" placeholder="Email Address" required />
-            <img class="error" src="/images/icon-error.svg" alt="error icon" />
+            <input type="text" placeholder="Email Address" />
+            <img
+              class="error display--off"
+              src="/images/icon-error.svg"
+              alt="error icon"
+            />
             <button>
               <img src="/images/icon-arrow.svg" alt="button arrow icon" />
             </button>
           </div>
-          <p class="error--message">Please provide a valid email</p>
+          <p class="error--message display--off">
+            Please provide a valid email
+          </p>
         </form>
       </section>
       <script src="/app/js/script.js"></script>

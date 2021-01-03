@@ -1,9 +1,9 @@
 .container {
   min-height: rem(800);
-  max-width: rem(1440);
+  // max-width: rem(1440);
   background-image: url("/images/bg-pattern-desktop.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 3fr;
@@ -69,7 +69,7 @@
         font-weight: 300;
       }
     }
-    p {
+    &__message {
       color: $desaturatedRed;
       font-weight: 300;
       padding: rem(40) 0;
@@ -112,15 +112,12 @@
             border: none;
             border-style: none;
           }
-          &:required {
-          }
           @include breakpoint-down(other) {
             font-size: rem(14);
           }
         }
         .error {
           margin-right: 0.4rem;
-          display: none;
         }
         button {
           height: 100%;
@@ -140,11 +137,12 @@
       }
       .error--message {
         text-align: left;
-        margin-left: 1rem;
+        margin-left: 1.6rem;
         color: rgb(227, 2, 2);
+        font-weight: 400;
         outline: none;
         text-decoration: none;
-        display: none;
+        padding: rem(16) 0;
       }
     }
   }

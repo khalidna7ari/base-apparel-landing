@@ -27,3 +27,10 @@ body {
     width: 90%;
   }
 }
+
+.display--off {
+  display: none;
+}
+.border--toggle {
+  border: solid 1px red;
+}
