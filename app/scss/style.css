@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-  min-height: 50rem;
+  min-height: 100vh;
   background-image: url("/images/bg-pattern-desktop.svg");
   background-size: contain;
   background-repeat: repeat;
@@ -87,7 +87,7 @@ body {
   background-image: url("/images/hero-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: contain;
+  background-size: cover;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;

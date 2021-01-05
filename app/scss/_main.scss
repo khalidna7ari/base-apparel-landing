@@ -1,5 +1,5 @@
 .container {
-  min-height: rem(800);
+  min-height: 100vh;
   // max-width: rem(1440);
   background-image: url("/images/bg-pattern-desktop.svg");
   background-size: contain;
@@ -34,7 +34,7 @@
     background-image: url("/images/hero-desktop.jpg");
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: contain;
+    background-size: cover;
     grid-area: hero;
     @include breakpoint-down(other) {
       background-image: url("/images/hero-mobile.jpg");
